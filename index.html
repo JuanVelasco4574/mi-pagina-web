@@ -3,35 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Sobre Mí</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Sobre Mí</h1>
-    <h2>Introducción</h2>
-    <p>Hola, mi nombre es Juan Velasco. Soy estudiante de medicina y me apasiona la nefrología y la programación. Esta página es una breve presentación sobre mí.</p>
-    <h2>Hoja de Vida</h2>
-    <p>Soy una persona dedicada, creativa y con muchas ganas de aprender. He trabajado en varios proyectos personales y colaborativos relacionados con medicina. Me gusta espeicalizarme en nefrología.</p>
-    <h2>Mi Foto</h2>
-    <img src="foto.jpg" alt="Foto de Juan Velasco" width="200">
-    <h2>Redes Sociales</h2>
-    <p>
-        <a href="https://www.facebook.com/juanvelasco" target="_blank">Facebook</a><br>
-        <a href="https://www.twitter.com/juanvelasco" target="_blank">Twitter</a><br>
-        <a href="https://www.linkedin.com/in/juanvelasco" target="_blank">LinkedIn</a>
+    <h1 id="titulo-principal">Sobre Mí</h1>
+
+    <h2 class="seccion" id="introduccion">Introducción</h2>
+    <p class="parrafo">Hola, mi nombre es Juan Velasco. Soy estudiante de medicina y me apasiona la nefrología y la programación. Esta página es una breve presentación sobre mí.</p>
+
+    <h2 class="seccion" id="hoja-de-vida">Hoja de Vida</h2>
+    <p class="parrafo">Soy una persona dedicada, creativa y con muchas ganas de aprender. He trabajado en varios proyectos personales y colaborativos relacionados con medicina. Me gusta especializarme en nefrología.</p>
+
+    <h2 class="seccion" id="mi-foto">Mi Foto</h2>
+    <img id="foto" src="foto.jpg" alt="Foto de Juan Velasco" width="200">
+
+    <h2 class="seccion" id="redes-sociales">Redes Sociales</h2>
+    <p class="parrafo">
+        <a class="enlace" href="https://www.facebook.com/juanvelasco" target="_blank">Facebook</a><br>
+        <a class="enlace" href="https://www.twitter.com/juanvelasco" target="_blank">Twitter</a><br>
+        <a class="enlace" href="https://www.linkedin.com/in/juanvelasco" target="_blank">LinkedIn</a>
     </p>
-    <h2>Mis Pasatiempos</h2>
-    <ul>
+
+    <h2 class="seccion" id="pasatiempos">Mis Pasatiempos</h2>
+    <ul class="lista" id="lista-pasatiempos">
         <li>Leer libros de medicina</li>
         <li>Jugar fútbol</li>
         <li>Ver películas</li>
     </ul>
-    <h2>Tareas Pendientes</h2>
-    <ol>
+
+    <h2 class="seccion" id="tareas">Tareas Pendientes</h2>
+    <ol class="lista" id="lista-tareas">
         <li>Entregar trabajos programación</li>
         <li>Estudiar neuroanatomía</li>
         <li>Ir a la universidad</li>
     </ol>
-    <h2>Mi Horario Semanal</h2>
-    <table border="1">
+
+    <h2 class="seccion" id="horario">Mi Horario Semanal</h2>
+    <table id="tabla-horario" border="1">
         <thead>
             <tr>
                 <th>Día</th>
@@ -39,37 +47,27 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Lunes</td>
-                <td>Estudiar fisiología</td>
-            </tr>
-            <tr>
-                <td>Martes</td>
-                <td>Estudiar neuroanatomía</td>
-            </tr>
-            <tr>
-                <td>Miércoles</td>
-                <td>Estudiar anatomía</td>
-            </tr>
-            <tr>
-                <td>Jueves</td>
-                <td>Estudiar neuroanatomía</td>
-            </tr>
-            <tr>
-                <td>Viernes</td>
-                <td>Neuroanatomía</td>
-            </tr>
+            <tr><td>Lunes</td><td>Estudiar fisiología</td></tr>
+            <tr><td>Martes</td><td>Estudiar neuroanatomía</td></tr>
+            <tr><td>Miércoles</td><td>Estudiar anatomía</td></tr>
+            <tr><td>Jueves</td><td>Estudiar neuroanatomía</td></tr>
+            <tr><td>Viernes</td><td>Neuroanatomía</td></tr>
         </tbody>
-    </table>   
-    <h2>Contáctame</h2>
-    <form action="#" method="post">
+    </table>
+
+    <h2 class="seccion" id="contacto">Contáctame</h2>
+    <form id="formulario-contacto" action="#" method="post">
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
         <label for="motivo">Motivo del contacto:</label><br>
         <input type="text" id="motivo" name="motivo" placeholder="¿Por qué deseas contactarme?" required><br><br>
+
         <label for="correo">Correo electrónico:</label><br>
         <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required><br><br>
+
         <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
+
